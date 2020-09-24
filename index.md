@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <title>Luke J Melander's Website</title>
 <meta charset="UTF-8">
