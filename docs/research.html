@@ -5,6 +5,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* { box-sizing: border-box; }
+body, figure, aside { margin: 0; }
+img { display: block; width: 100%; }
+
+@media (min-width: 70em) {
+	figure {
+		display: block;
+		float: left;
+		width: 33.3333333333333%;
+		}
+	main {
+		float: left;
+		width: 100%;
+	}
+	aside {
+		float: right;
+		width: 12rem;
+		padding: 0;
+		margin: 0;
+		font-size: 0.875em;
+		}
+	aside h2 {
+		margin-left: 0.5em;
+		margin-top: -0.5em;
+	}
+}		
+</style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178903313-1"></script>
 <script>
@@ -44,22 +72,22 @@
 			AIAA Link
 		</button>
 </div>
-
-<div class="row">
-	<div class="column">
+<main>
+	<figure>
 	<h4><b>Abstract</b></h4>
 		<p> 
 			Laminar to turbulent boundary layer transition is sensitive to wall temperature distribution and freestream disturbances.  The wall temperature can increase the boundary layer thickness and affect the growth rate of disturbances in the boundary layer. Additionally, the receptivity and growth mechanisms in the boundary layer can capture and grow small amplitude disturbances that eventually cause transition. The goal of this paper is to use new capabilities to better inform the PSE analysis and introduce the feasibility of performing receptivity analysis with DNS. The ascent trajectory for HIFiRE-1 is simulated using a loosely coupled conjugate heat transfer solver. The wall temperature data is then used as a boundary condition for the PSE analysis. The PSE analysis agreed with prior analysis for hypersonic blunt nose cones.  Furthermore, the PSE results showed large differences in the second-mode growth rate depending on the treatment of the wall temperature boundary condition.
 			Finally, the capability for performing receptivity analysis with DNS is verified for a simple test case. Future work will use this new capability for inputting freestream disturbances into the flow field for HIFiRE-1.
 		</p>
-	</div>
-	<div class="column">
+	</figure>
+	<figure>
 		<img src="Transition.PNG" style="max-width:500px;">
-	</div>
-	<div class="column">
+	</figure>
+	<figure>
 		<img src="19s_nfactor2.png" style="max-width:500px;">
-	</div>
-</div>
+	</figure>
+</main>
+
 
 <div class="w3-container w3-padding-32">
 	<p> I'll be updating this with links to papers I've written, and eventually my thesis when it's published </p>
