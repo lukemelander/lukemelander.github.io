@@ -10,27 +10,47 @@
 body, figure, aside { margin: 0; }
 img { display: block; width: 100%; }
 
-@media (min-width: 70em) {
+@media (min-width: 80em) {
 	figure {
 		display: block;
+		transform: translate(2%,0%);
 		float: left;
 		width: 33.3333333333333%;
 		}
 	figure2 {
 		display: block;
-	    transform: translate(0%,20%);
+	    transform: translate(7%,5%);
 		float: left;
-		width: 33.3333333333333%;
+		width: 25.0%;
 		}
 	figure3 {
 		display: block;
-	    transform: translate(0%,50%);
+	    transform: translate(7%,30%);
 		float: left;
-		width: 33.3333333333333%;
+		width: 25.0%;
+		}
+	figure_1 {
+		display: block;
+	    transform: translate(0%,0%);
+		float: left;
+		width: 25.0%;
+		}
+	figure_2 {
+		display: block;
+	    transform: translate(0%,20%);
+		float: left;
+		width: 25.0%;
+		}
+	figure_3 {
+		display: block;
+	    transform: translate(0%,30%);
+		float: left;
+		width: 25.0%;
 		}
 	main {
+		margin-left: 1%;
 		float: left;
-		width: 100%;
+		width: 99%;
 	}
 	aside {
 		float: right;
@@ -56,24 +76,39 @@ img { display: block; width: 100%; }
 </script>
 <body>
 
-<!--Navbar (sit on top) -->
-<div class="w3-top">
-	<div class="w3-var w3-white w3-wide w3-padding w3-card">
-		<a href="index.html" class="w3-bar-item w3-button"> Home</a>
-		<div class="w3-right w3-hide-small">
-			<a href="research.html" class="w3-bar-item w3-button">Research</a>
-			<a href="coding.html" class="w3-bar-item w3-button">Projects</a>
-			<a href="pics.html" class="w3-bar-item w3-button">Pictures</a>
-			<a href="about.html" class="w3-bar-item w3-button">About</a>	
-		</div>
-	</div>
-</div>
-<p></p>
+
+
+
 <div class="w3-container w3-center w3-padding-48 w3-white">
 	    <h1 class="w3-xxxlarge"><b>Research</b></h1>
 		<p> Here are descriptions of and links to research papers I've written or collaborated on </p>
 </div> 
-	    
+	   <div class="w3-container w3-padding-32">
+	    <h3><b>Investigation of Atmospheric Turbulence and Shock Interaction for a Hypersonic Sphere-cone</b> </h3>
+		<h4><b>Authors</b>: Luke J. Melander and Graham V. Candler</h4>
+		<h4><b>Publication Date</b>: TBD, 2021 <h4>
+		<button class="w3-button w3-light-grey w3-block" 
+			style="max-width:200px;">
+			AIAA Link (TBD)
+		</button>
+</div>
+<main>
+	<figure_1>
+	<h4><b>Abstract</b></h4>
+		<p> 
+			Laminar to turbulent boundary layer transition is known to be sensitive to freestream disturbances. However, the disturbances in the upper atmosphere are not well characterized, and a multi-university effort to characterize turbulence and particle distributions in the stratosphere aims to address that. This paper considers the numerical methods associated with simulating shock-turbulence interactions for a hypersonic sphere-cone. Atmospheric turbulence is first generally characterized, and then a turbulent shear simulation is characterized in relation to hypersonic flight in order to establish a method for simulating the interaction between hypersonic vehicles and atmospheric turbulence. Low-dissipation Direct Numerical Simulation (DNS) methods for the compressible Navier-Stokes equations are compared with linear equations for planar wave and oblique shock interaction and found to accurately simulate the shock-disturbance interaction. Linear growth of boundary layer waves due to interaction with the second mode instability in hypersonic boundary layer is also simulated with low dissipation DNS and found to compare well with predictions from the Parabolized Stability Equations (PSE). Lastly, atmospheric turbulence in relation to hypersonic flight and simulation requirements to determine it's effect on hypersonic boundary layer transition are discussed.</p>
+	</figure_1>
+	<figure_2>
+		<img src="fdspectra.png" style="max-width:500px;">
+	</figure_2>
+	<figure_3>
+		<img src="etcomp.png" style="max-width:500px;">
+	</figure_3>
+	<figure_2>
+		<img src="DNSvPSE_6.png" style="max-width:500px;">
+	</figure_2>
+</main>
+ 
 <div class="w3-container w3-padding-32">
 	    <h3><b> Stability Analysis of HIFiRE-1 with Flight Wall Temperatures</b> </h3>
 		<h4><b>Authors</b>: Luke J. Melander, Anthony Knutson, John D. Reinert, and Graham V. Candler</h4>
