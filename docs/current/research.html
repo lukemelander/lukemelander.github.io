@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Research </title>
-<link rel="stylesheet" href="extcss.css" />
+<title>Luke J Melander Personal Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,76 +14,72 @@
   gtag('config', 'UA-178903313-1');
 </script>
 <style>
-* { box-sizing: border-box; }
-body, figure, aside { margin: 0; }
-img { display: block; width: 100%; }
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
 
-@media (min-width: 80em) {
-	figure {
-		display: block;
-		transform: translate(2%,0%);
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+figure {
+	    transform: translate(45%,0%);
 		float: left;
-		width: 33.3333333333333%;
+		width: 7.5.0%;
 		}
-	figure2 {
-		display: block;
-	    transform: translate(7%,5%);
-		float: left;
-		width: 25.0%;
-		}
-	figure3 {
-		display: block;
-	    transform: translate(7%,30%);
-		float: left;
-		width: 25.0%;
-		}
-	figure_1 {
-		display: block;
-	    transform: translate(0%,0%);
-		float: left;
-		width: 25.0%;
-		}
-	figure_2 {
-		display: block;
-	    transform: translate(0%,20%);
-		float: left;
-		width: 25.0%;
-		}
-	figure_3 {
-		display: block;
-	    transform: translate(0%,30%);
-		float: left;
-		width: 25.0%;
-		}
-	main {
-		margin-left: 1%;
-		float: left;
-		width: 99%;
-	}
-	aside {
-		float: right;
-		width: 12rem;
-		padding: 0;
-		margin: 0;
-		font-size: 0.875em;
-		}
-	aside h2 {
-		margin-left: 0.5em;
-		margin-top: -0.5em;
-	}
-}		
+		
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  }
 </style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178903313-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-178903313-1');
-</script>
 <body>
 
+<!--Navbar (sit on top) -->
 <div class="w3-top">
 	<div class="w3-var w3-white w3-wide w3-padding w3-card">
 		<a href="../index.html" class="w3-bar-item w3-button"> Home</a>
@@ -92,49 +87,34 @@ img { display: block; width: 100%; }
 			<a href="research.html" class="w3-bar-item w3-button">Research</a>
 			<a href="coding.html" class="w3-bar-item w3-button">Projects</a>
 			<a href="books.html" class="w3-bar-item w3-button">Book Review Blog</a>
-			<a href="pics.html" class="w3-bar-item w3-button">Pictures</a>				
+			<a href="pics.html" class="w3-bar-item w3-button">Pictures</a>			
 			<a href="about.html" class="w3-bar-item w3-button">About</a>	
 		</div>
 	</div>
 </div>
-<div class="w3-container w3-padding-32">
-</div>
-
 
 <div class="w3-container w3-center w3-padding-48 w3-white">
 	    <h1 class="w3-xxxlarge"><b>Research</b></h1>
 		<p> Here are descriptions of and links to research papers I've written or collaborated on </p>
 </div> 
 
-<div class="w3-container w3-padding-32">
-	    <h3><b>Investigation of Atmospheric Turbulence and Shock Interaction for a Hypersonic Sphere-cone</b> </h3>
-		<h4><b>Authors</b>: Luke J. Melander and Graham V. Candler</h4>
-		<h4><b>Publication Date</b>: Jan, 2021 <h4>
-		<button class="w3-button w3-light-grey w3-block" 
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><b>Investigation of Atmospheric Turbulence and Shock Interaction for a Hypersonic Sphere-cone</b></h2>
+	  <h4><b>Authors</b>: Luke J. Melander and Graham V. Candler</h4>
+      <h4><b>Publication Date</b>: January, 2021 <h4>
+	  		<button class="w3-button w3-light-grey w3-block" 
 			onclick="window.location.href='https://doi.org/10.2514/6.2021-1325';" 
 			style="max-width:200px;">
 			AIAA Link
 		</button>
-</div>
-<main>
-	<figure_1>
-	<h4><b>Abstract</b></h4>
-		<p> 
-			Laminar to turbulent boundary layer transition is known to be sensitive to freestream disturbances. However, the disturbances in the upper atmosphere are not well characterized, and a multi-university effort to characterize turbulence and particle distributions in the stratosphere aims to address that. This paper considers the numerical methods associated with simulating shock-turbulence interactions for a hypersonic sphere-cone. Atmospheric turbulence is first generally characterized, and then a turbulent shear simulation is characterized in relation to hypersonic flight in order to establish a method for simulating the interaction between hypersonic vehicles and atmospheric turbulence. Low-dissipation Direct Numerical Simulation (DNS) methods for the compressible Navier-Stokes equations are compared with linear equations for planar wave and oblique shock interaction and found to accurately simulate the shock-disturbance interaction. Linear growth of boundary layer waves due to interaction with the second mode instability in hypersonic boundary layer is also simulated with low dissipation DNS and found to compare well with predictions from the Parabolized Stability Equations (PSE). Lastly, atmospheric turbulence in relation to hypersonic flight and simulation requirements to determine it's effect on hypersonic boundary layer transition are discussed.</p>
-	</figure_1>
-	<figure_2>
-		<img src="../researchpics/fdspectra.png" style="max-width:500px;">
-	</figure_2>
-	<figure_3>
-		<img src="../researchpics/etcomp.png" style="max-width:500px;">
-	</figure_3>
-	<figure_2>
-		<img src="../researchpics/DNSvPSE_6.png" style="max-width:500px;">
-	</figure_2>
-</main>
- 
-<div class="w3-container w3-padding-32">
-	    <h3><b> Stability Analysis of HIFiRE-1 with Flight Wall Temperatures</b> </h3>
+	  <p> 
+		Laminar to turbulent boundary layer transition is known to be sensitive to freestream disturbances. However, the disturbances in the upper atmosphere are not well characterized, and a multi-university effort to characterize turbulence and particle distributions in the stratosphere aims to address that. This paper considers the numerical methods associated with simulating shock-turbulence interactions for a hypersonic sphere-cone. Atmospheric turbulence is first generally characterized, and then a turbulent shear simulation is characterized in relation to hypersonic flight in order to establish a method for simulating the interaction between hypersonic vehicles and atmospheric turbulence. Low-dissipation Direct Numerical Simulation (DNS) methods for the compressible Navier-Stokes equations are compared with linear equations for planar wave and oblique shock interaction and found to accurately simulate the shock-disturbance interaction. Linear growth of boundary layer waves due to interaction with the second mode instability in hypersonic boundary layer is also simulated with low dissipation DNS and found to compare well with predictions from the Parabolized Stability Equations (PSE). Lastly, atmospheric turbulence in relation to hypersonic flight and simulation requirements to determine it's effect on hypersonic boundary layer transition are discussed.
+	  </p>
+    </div>
+     <div class="card">
+      <h2><b>Stability Analysis of HIFiRE-1 with Flight Wall Temperatures</b></h2>
 		<h4><b>Authors</b>: Luke J. Melander, Anthony Knutson, John D. Reinert, and Graham V. Candler</h4>
 		<h4><b>Publication Date</b>: June 8, 2020 <h4>
 		<button class="w3-button w3-light-grey w3-block" 
@@ -142,26 +122,14 @@ img { display: block; width: 100%; }
 			style="max-width:200px;">
 			AIAA Link
 		</button>
-</div>
-<main>
-	<figure>
-	<h4><b>Abstract</b></h4>
 		<p> 
 			Laminar to turbulent boundary layer transition is sensitive to wall temperature distribution and freestream disturbances.  The wall temperature can increase the boundary layer thickness and affect the growth rate of disturbances in the boundary layer. Additionally, the receptivity and growth mechanisms in the boundary layer can capture and grow small amplitude disturbances that eventually cause transition. The goal of this paper is to use new capabilities to better inform the PSE analysis and introduce the feasibility of performing receptivity analysis with DNS. The ascent trajectory for HIFiRE-1 is simulated using a loosely coupled conjugate heat transfer solver. The wall temperature data is then used as a boundary condition for the PSE analysis. The PSE analysis agreed with prior analysis for hypersonic blunt nose cones.  Furthermore, the PSE results showed large differences in the second-mode growth rate depending on the treatment of the wall temperature boundary condition.
 			Finally, the capability for performing receptivity analysis with DNS is verified for a simple test case. Future work will use this new capability for inputting freestream disturbances into the flow field for HIFiRE-1.
 		</p>
-	</figure>
-	<figure3>
-		<img src="../researchpics/movie.gif" style="max-width:500px;">
-	</figure3>
-	<figure2>
-		<img src="../researchpics/19s_nfactor2.png" style="max-width:500px;">
-	</figure2>
-</main>
-
-
-<div class="w3-container w3-padding-32">
-	<p> I'll be updating this with links to papers I've written, and eventually my thesis when it's published </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+  </div>
 </div>
 
 <!-- Footer -->
